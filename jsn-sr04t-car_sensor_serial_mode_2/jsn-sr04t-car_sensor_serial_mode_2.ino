@@ -25,7 +25,7 @@ https://kd8bxp.blogspot.com/
 */
 
 #include <SoftwareSerial.h>
-#include <Adafruit_NeoPixel.h>
+#include "src/Adafruit_NeoPixel/Adafruit_NeoPixel.h"
 #ifdef __AVR__
   #include <avr/power.h>
 #endif

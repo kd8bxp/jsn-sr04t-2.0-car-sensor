@@ -24,11 +24,11 @@ https://www.youtube.com/channel/UCP6Vh4hfyJF288MTaRAF36w
 https://kd8bxp.blogspot.com/  
 */
 
-#include <Adafruit_NeoPixel.h>
+#include "src/Adafruit_NeoPixel/Adafruit_NeoPixel.h"
 #ifdef __AVR__
   #include <avr/power.h>
 #endif
-#include <TimedAction.h>
+#include "src/TimedAction/TimedAction.h"
 
 #define ECHOPIN 2// Pin to receive echo pulse
 #define TRIGPIN 3// Pin to send trigger pulse
@@ -123,5 +123,3 @@ void colorWipe(uint32_t c, uint8_t wait) {
     delay(wait);
   }
 }
-
-
